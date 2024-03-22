@@ -23,15 +23,26 @@ h1 {
     text-shadow: 3px 3px 3px #3498db;
     animation: fadeIn 1s ease-in-out;
 }
+#score{
+    color: white;
+    z-index: 2;
+    top: 16%;
+    margin: 15px;
+    padding: 6px;
+    font-size: 2em;
+    position: absolute;
+}
 .box{
+    position: relative;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     margin: 3px;
+    z-index: 1;
     padding: 2px;
     display: flex;
-    border-radius: 20px;
+    border-radius: 30px;
     background-image: linear-gradient(rgb(51, 152, 219),red);
     box-shadow: 1px 2px 3px 3px rgba(255, 7, 152, 0.623);
 }
@@ -99,7 +110,30 @@ button:hover {
         animation: fadeIn 1s ease-in-out;
     }
     .guess{
-        font-size: 2em;
+        font-size: 1.8em;
         margin-top: 20px;
+    }
+    #score{
+        color: white;
+        z-index: 1.4;
+        top: 8%;
+        margin: 10px;
+        padding: 6px;
+        font-size: 1.7em;
+        position: absolute;
+    }
+    .box{
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: center;
+        margin: 3px;
+        z-index: 0.7;
+        padding: 2px;
+        display: flex;
+        border-radius: 30px;
+        background-image: linear-gradient(rgb(51, 152, 219),red);
+        box-shadow: 1px 2px 3px 3px rgba(255, 7, 152, 0.623);
     }
 }
